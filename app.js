@@ -42,7 +42,7 @@ console.log(val.length);
 let bel;
 bel = 5679;
 //bel = String(8969);
-console.log(bel.toFixed(2));
+console.log(bel.toFixed(3));
 
 let sam;
 sam = Number ('9712');
@@ -124,3 +124,44 @@ const tags = 'web dev, design, programming, JavaScript, Python';
 val = tags.split(',');
 
 console.log(val);
+
+//temperal strings 
+let myName = "John";
+let lstName = "Doe";
+
+let temp = `Welcome ${firstName}, ${lastName}!`;
+
+document.getElementById('demo').innerHTML = temp;
+
+//temperal strings are a more neat way of working with long and/or multi-line strings in javascript 
+
+let dtext = `The quick
+brown fox
+jumps over
+the lazy dog`;
+
+//two ways of creating Arrays
+const number = [12, 14, 16, 18, 20];
+const number2 = new Array(18, 20, 22, 24, 26, 28);
+const fruits = ['apples', 'oranges','grapes', 'bananas'];
+const mixed = [1, 'volvo', true, 'mazda', 4, {a:1, b:2}, new Date];
+
+console.log(mixed);
+
+let lengh = number.length;
+console.log (lengh);
+console.log(fruits.length);
+
+//push add a new item to an array
+number2.push(56);
+number2[3] = 124;
+
+console.log(number2);
+
+//check if its an array 
+
+val = Array.isArray(mixed);
+console.log(val);
+
+
+
